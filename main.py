@@ -1,8 +1,7 @@
-import tkinter as tk
-from views.student_app import StudentApp
+from controllers.student_controller import StudentController
+from views.student_view import StudentView
 
-
-if __name__=="__main":
-    root=tk.Tk()
-    app=tk.Tk()
-    root.mainloop()
+if __name__ == "__main__":
+    controller = StudentController()
+    view = StudentView(controller)
+    view.run()
